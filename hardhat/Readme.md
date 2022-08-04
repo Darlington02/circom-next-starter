@@ -40,7 +40,6 @@ npm run compile:contracts
 To run tests:
 
 ```bash
-cd contracts
 npm run deploy:localhost
 ```
 
@@ -49,13 +48,11 @@ npm run deploy:localhost
 To run tests:
 
 ```bash
-cd contracts
 npm run test
 ```
 
 ### To bump solidity version of verifier contract
 
 ```bash
-cd contracts
 npm run version:fix
 ```
