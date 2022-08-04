@@ -1,0 +1,44 @@
+{
+  "name": "circom-next-starter",
+  "version": "1.0.0",
+  "description": "Ultimate starter kit for full stack ZK Dapp with Circom, Snarkjs and Nextjs",
+  "scripts": {
+    "compile:contracts": "npx hardhat compile --force",
+    "develop": "npx hardhat node",
+    "deploy:localhost": "npx hardhat deploy --tags complete",
+    "test": "npx hardhat test",
+    "test:full": "npm run compile:circuits && npm run version:fix && npx hardhat test",
+    "compile:circuits": "bash scripts/compile-circuits.sh",
+    "version:fix": "node scripts/bump-solidity",
+    "setup:circom": "bash scripts/setup-circom.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Darlington02/circom-next-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "git@github.com:Darlington02/circom-next-starter.git/issues"
+  },
+  "homepage": "git@github.com:Darlington02/circom-next-starter.git#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "circom_tester": "^0.0.11",
+    "circomlib": "^2.0.2",
+    "circomlib-matrix": "^1.0.1",
+    "circomlib-ml": "^1.1.0",
+    "circomlibjs": "^0.1.1",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.8",
+    "hardhat": "^2.9.7",
+    "hardhat-contract-sizer": "^2.4.0",
+    "hardhat-deploy": "^0.10.4",
+    "hardhat-gas-reporter": "^1.0.7",
+    "snarkjs": "^0.4.19",
+    "web3-utils": "^1.7.0"
+  }
+}
