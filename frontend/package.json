@@ -1,0 +1,25 @@
+{
+  "name": "ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "circomlibjs": "^0.1.6",
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.9",
+    "next": "12.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "snarkjs": "^0.4.22",
+    "web3modal": "^1.9.8"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6"
+  }
+}
