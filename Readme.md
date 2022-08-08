@@ -1,4 +1,4 @@
-# **CIRCOM-NEXT-STARTER** -The Ultimate ZK Boilerplate
+# **CIRCOM-NEXT-STARTER**
 
 This repository contains a boilerplate for full stack development of a Zero Knowledge decentralized application with the use of DSLs and tools such as Hardhat, Circom, Snarkjs, Nextjs etc.
 
@@ -6,8 +6,6 @@ This repository contains a boilerplate for full stack development of a Zero Know
 **ZERO KNOWLEDGE PROOFS:** In cryptography, a zero-knowledge proof or zero-knowledge protocol is a method by which one party (the prover) can prove to another party (the verifier) that a given statement is true while the prover avoids conveying any additional information apart from the fact that the statement is indeed true. The most commonly used types are ZK-Snarks and ZK-Starks. For this boilerplate, we'd be utilizing ZK-Snarks.
 
 **ZK-Snarks:** zk-SNARK is an acronym which stands for Zero Knowledge Succinct Non-Interactive Argument of Knowledge. All zk-SNARKs have these properties; they don’t leak information, they are tiny and easy to verify even if the notion being proven is complicated, they don’t require back and forth communication, and they are proofs of knowledge — the prover must actually know the thing being claimed, not just that it is true.
-
-**HARDHAT:** Hardhat is an environment developers use to test, compile, deploy and debug dApps based on the Ethereum blockchain. We would be using this for this boilerplate. Other significant alternatives are Truffle, Foundary and Brownie. Available Commands to aid development can be found in package.json scripts in the hardhat folder.
 
 **CIRCOM:** Like most ZKPs, zk-SNARKs permits proving computational statements, but they cannot be applied to the computational problem directly, the statement first needs to be converted into the right form(Circuits). Circom is a novel domain-specific language (DSL) for defining arithmetic circuits that can be used to generate zero-knowledge proofs.
 
@@ -59,3 +57,6 @@ The following graphic shows the structure of the most important elements of the 
 │   │   ├── snarkjsZkproof.js
 │   │   ├
 ```
+
+## **REFERENCE BLOG**
+If you ever get stuck, and need a guide to reference, the guide written by Vivian Plasencia, **"How to create a Zero Knowledge Dapp, from Zero to Production"**, is a great one, and where the inspiration for this boilerplate, was derived from. Find it [HERE](https://vivianblog.hashnode.dev/how-to-create-a-zero-knowledge-dapp-from-zero-to-production).
