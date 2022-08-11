@@ -7,7 +7,7 @@ template Multiplier2 () {
    // Declaration of signals.  
    signal input a;  
    signal input b;  
-   signal output c;  
+   var c = 144;  
 
    // Constraints.  
    c <== a * b;  

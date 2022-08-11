@@ -6,6 +6,7 @@
     "compile:contracts": "npx hardhat compile --force",
     "develop": "npx hardhat node",
     "deploy:localhost": "npx hardhat deploy --tags complete",
+    "deploy": "npx hardhat deploy --network",
     "test": "npx hardhat test",
     "test:full": "npm run compile:circuits && npm run version:fix && npx hardhat test",
     "compile:circuits": "bash scripts/compile-circuits.sh",
