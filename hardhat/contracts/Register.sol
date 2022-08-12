@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-
 interface Iverifier {
 
     function verifyProof(
@@ -14,36 +12,37 @@ interface Iverifier {
 
 }
 
-contract NFTMint is ERC721 {
+contract Register {
 
-    uint256 public newItemId;
+    string public name;
 
     Iverifier verifier;
 
     mapping(uint256 => bool) public nullifiers;
 
-    constructor(address _verifier, string memory _name, string memory _symbol) ERC721(_name, _symbol) {
+    constructor(address _verifier) {
         verifier = Iverifier(_verifier);
     }
 
-    function mintWithProof(
+    function registerWithProof(
         uint256 _nullifier,
         uint256 _publicNumber,
+        string memory _name,
         uint256[2] memory a,
         uint256[2][2] memory b,
         uint256[2] memory c
     ) public {
-        require(nullifiers[_nullifier] == false, "NFTMint: Nullifier is used");
+        require(nullifiers[_nullifier] == false, "Register: Nullifier is used");
 
         require(verifier.verifyProof(
             a,
             b,
             c, 
             [_publicNumber]
-        ), "NFTMint: Invalid proof");
+        ), "Register: Invalid proof");
 
         nullifiers[_nullifier] = true;
-        newItemId++;
+        name = _name;
     }
 
     

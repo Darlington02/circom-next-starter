@@ -7,13 +7,13 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         log: true
     });
 
-    await deploy('NFTMint', {
+    await deploy('Register', {
         from: deployer,
-        args: [Verifier.address, "ZKAPP", "ZKP"],
+        args: [Verifier.address],
         log: true
     });
 
     // Verifier deployed to: 0xA7057C14403ee2f827057Aa2B3A3F2c104d433eD
-    // NFTMint deployed to: 0xa5f8Acf6eEB36A3e9284F52b5DA2bEB9c8728523
+    // Register deployed to: 0x8804B67C2d0a014CC88CD2759f0e71a8C9714912
 };
 module.exports.tags = ['complete'];
