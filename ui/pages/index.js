@@ -126,7 +126,7 @@ export default function Home(){
 
             <div className={styles.grid}>
                 <div className={styles.card}>
-                    <h2>Ensure to connect to Rinkeby! &rarr;</h2>
+                    <h2>Ensure to connect to Harmony Devnet! &rarr;</h2>
                     <p className={styles.instructions}>To register your name on the contract, you must first prove that you know the missing number <b>which multiplies 12 to give 144</b></p>
 
                     <div className={styles.numberForm}>
