@@ -3,6 +3,14 @@
 npm run setup:circom
 ```
 
+### Install Dependencies
+
+To begin, first install all dependencies:
+
+```bash
+npm install or yarn
+```
+
 ### Run circuits
 
 To run cicuits, located inside the `circuits` folder, first ensure wget is installed. to check, run:
