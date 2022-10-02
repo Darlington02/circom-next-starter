@@ -25,21 +25,12 @@ module.exports = {
             gas: 100000000,
             blockGasLimit: 0x1fffffffffffff
         },
-        harmonyTestnet: {
-            url: "https://api.s0.b.hmny.io",
-            chainId: 1666700000,
-            accounts: [`${PRIVATE_KEY}`]
-        },
         harmonyDevnet: {
             url: "https://api.s0.ps.hmny.io/",
             chainId: 1666900000,
             accounts: [`${PRIVATE_KEY}`]
         },
-        harmonyMainnet: {
-            url: "https://api.s0.t.hmny.io",
-            chainId: 1666600000,
-            accounts: [`${PRIVATE_KEY}`]
-        },
+        //      Add your intending network here   
     },
     namedAccounts: {
         deployer: 0,
