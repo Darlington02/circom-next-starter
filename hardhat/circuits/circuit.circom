@@ -10,7 +10,7 @@ template Multiplier2 () {
    var c = 144;  
 
    // Constraints.  
-   c <== a * b;  
+   c === a * b;  
 }
 
 component main = Multiplier2();
